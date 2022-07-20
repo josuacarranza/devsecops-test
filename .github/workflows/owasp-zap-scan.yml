@@ -11,7 +11,7 @@ jobs:
         with:
           ref: master
       - name: ZAP Scan
-        uses: zaproxy/action-baselin@v0.6.1
+        uses: zaproxy/action-baseline@v0.6.1
         with:
           # docker image of the zap proxy
           docker_name: 'owasp/zap2docker-stable'

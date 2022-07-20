@@ -11,9 +11,8 @@ jobs:
         with:
           ref: master
       - name: ZAP Scan
-        uses: zaproxy/action-full-scan@v0.4.0
+        uses: zaproxy/action-baselin@v0.6.1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           # docker image of the zap proxy
           docker_name: 'owasp/zap2docker-stable'
           # The target website where the test will run
